@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="es" />
+    <meta name="application-name" content="MIeL" />
+    <meta
+      name="author"
+      content="Alejandro Rusticcini, Leandro Morrone, Facundo DAranno, Juan De Cicco"
+    />
+    <meta
+      name="keywords"
+      content="miel, unlam, educacion, distancia, alumnos, ead, tutoria, plataforma, computacion"
+    />
+    <meta
+      name="description"
+      content="MIeL (Materias Interactivas en L&iacute;nea) es la plataforma de gesti&oacute;n de educaci&oacute;n a distancia de la UNLaM, desarrollada y administrada por docentes de la Universidad."
+    />
+    <meta name="theme-color" content="#111111" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=3"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <title>MIeL - Materias Interactivas en L&iacute;nea</title>
+
+    <style type="text/css" media="all">
+        
+       #chat-preview:hover {
+            background-color: #222222; 
+        }
+        </style>
+
+    <!-- Iconos y manifiesto -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-57x57.png?2023.1.0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-60x60.png?2023.1.0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-72x72.png?2023.1.0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-76x76.png?2023.1.0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-114x114.png?2023.1.0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-120x120.png?2023.1.0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-144x144.png?2023.1.0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-152x152.png?2023.1.0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/apple-icon-180x180.png?2023.1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/android-icon-192x192.png?2023.1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/favicon-32x32.png?2023.1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/favicon-96x96.png?2023.1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/favicon-16x16.png?2023.1.0"
+    />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/favicon.ico?2023.1.0"
+    />
+    <link
+      rel="manifest"
+      href="https://miel.unlam.edu.ar/vista/imagenes/favicons/manifest.json?2023.1.0"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://miel.unlam.edu.ar/vista/imagenes/favicons/ms-icon-144x144.png?2023.1.0"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      .material-icons {
+        font-family: "Material Icons";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px; /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Support for IE. */
+        font-feature-settings: "liga";
+      }
+    </style>
+
+    <!-- Estilos generales de MIeL -->
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/css/w3.css?2023.1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/css/miel-theme.css?2023.1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/css/miel-template.css?2023.1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/css/miel-modulos.css?2023.1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/css/miel-dark-theme.css?2023.1.0"
+      id="mielTheme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/css/prism/prism.dark.css?2023.1.0"
+    />
+
+    <style>
+        .chat-container {
+        border: 1px solid black;
+        height: 300px;
+        overflow-y: scroll;
+        }
+
+        .message {
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        }
+
+        .sent {
+        background-color: #ccffcc;
+        }
+
+        .received {
+        background-color: #fff;
+        }
+
+    </style>
+
+    <!-- Fuentes e iconos de MIeL -->
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/fuentes/material-icons-v94/material-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/fuentes/material-file-types/material-file-types.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/fuentes/material-file-types/material-file-types-dark.css"
+      id="fileIconsTheme"
+    />
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/jquery-1.12.4.min.js?2023.1.0"
+    ></script>
+
+    <!-- jQuery Validation Plugin -->
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/jquery-validation/jquery.validate.min.js?2023.1.0"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/jquery-validation/additional-methods.min.js?2023.1.0"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/jquery-validation/miel-additional-methods.js?2023.1.0"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/jquery-validation/messages_es.js?2023.1.0"
+    ></script>
+
+    <!-- Otros metodos de soporte -->
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/helpers.js?2023.1.0"
+    ></script>
+
+    <!-- Datepicker -->
+    <link
+      rel="stylesheet"
+      href="https://miel.unlam.edu.ar/vista/css/datepicker/datepicker.css?2023.1.0"
+    />
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/datepicker/datepicker.js?2023.1.0"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/datepicker/datepicker.es-ES.js?2023.1.0"
+    ></script>
+
+    <!-- Magnific popup (modal plugin) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://miel.unlam.edu.ar/vista/css/magnific-popup/magnific-popup.css?2023.1.0"
+    />
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/magnific-popup/magnific-popup.min.js?2023.1.0"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/magnific-popup/magnific-popup-defaults.js?2023.1.0"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/magnific-popup/ajax-check-session.js?2023.1.0"
+    ></script>
+
+    <!-- Tippy.js (tooltips plugin) -->
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/tippy/popper.min.js?2023.1.0"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/tippy/tippy.min.js?2023.1.0"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://miel.unlam.edu.ar/vista/css/tippy/default.css?2023.1.0"
+    />
+
+    <!-- Funciones para validar sesion del lado del cliente -->
+    <script type="text/javascript">
+      // Renueva la sesion del usuario cada X milisegundos
+      function recargarSesion(milisegundos) {
+        setInterval(function () {
+          $.ajax({
+            type: "GET",
+            url: "https://miel.unlam.edu.ar/principal/event/recargarSesion/",
+            cache: false,
+            success: function (data) {
+              console.log("Ultima conexion: " + data);
+            },
+          });
+        }, milisegundos);
+      }
+
+      // Verifica si la sesion del usuario esta activa
+      function verificarSesion() {
+        var sesionActiva = false;
+        $.ajax({
+          type: "GET",
+          url: "https://miel.unlam.edu.ar/principal/event/isLogged/",
+          cache: false,
+          async: false,
+          success: function (data) {
+            sesionActiva = data == "1";
+          },
+        });
+        return sesionActiva;
+      }
+    </script>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PGVLVSLH65"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-PGVLVSLH65");
+    </script>
+
+    <!-- Hotjar Tracking Code -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2348490, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <!-- Plugin scroll to para el chat -->
+    <script
+      type="text/javascript"
+      src="https://miel.unlam.edu.ar/vista/script/jquery.scrollTo.min.js?2023.1.0"
+    ></script>
+
+    <!-- Funciones propias de esta pagina -->
+    <script type="text/javascript">
+      // TODO: si estas leyendo y llega un mensaje, mostrar div y no scrollear
+
+      // Frecuencia de actualizacion del chat en milisegundos
+      intervaloActualizacion = 2500;
+
+      // Fecha y hora de ultima lectura / actualizacion
+      ultimaLectura = "";
+
+      // Estructura donde se almacenan los datos obtenidos por ajax
+      contenidoChat = [];
+
+      // Bandera que indica si se carga el chat por primera vez
+      primerCarga = 1;
+
+      // Id de la comision seleccionada actualmente
+      comisionSeleccionada = 0;
+
+      $(function () {
+        // Llamada a la funcion que trae y muestra los datos
+        loadData();
+
+        // Funcion para actualizar los mensaje cuando se selecciona una comision
+
+        $("#div-chat-conversaciones").on(
+          "click",
+          ".div-chat-conversaciones-elemento",
+          function () {
+            comisionSeleccionada = $(this).attr("id");
+
+            $(".div-chat-conversaciones-elemento")
+              .removeClass("w3-leftbar w3-border-theme")
+              .find(".botonDescargarChat")
+              .addClass("w3-hide");
+
+            $("#" + comisionSeleccionada)
+              .addClass("w3-leftbar w3-border-theme")
+              .find(".botonDescargarChat")
+              .removeClass("w3-hide");
+
+            contenidoChat[comisionSeleccionada].cant = 0;
+
+            $("#div-chat-mensajes").css({ opacity: 0.0 });
+            actualizarInterfaz();
+            $("#div-chat-mensajes").animate({ opacity: 1.0 }, 200);
+          }
+        );
+
+        // Funciones para el envio de un nuevo mensaje
+
+        $("#form-chat-submit").click(function () {
+          if (isComplete("#form-chat-mensaje")) {
+            $("#form-chat-comision").val(comisionSeleccionada);
+
+            $.post(
+              "https://miel.unlam.edu.ar/chat/event/insertar-mensaje/",
+              $("#form-chat").serialize(),
+              function (data) {
+                $("#form-chat-mensaje").val(""); // Limpiar el cuadro de texto
+              }
+            );
+          }
+        });
+
+        $("#form-chat-mensaje").keypress(function (event) {
+          if (event.keyCode === 13 && !event.shiftKey) {
+            event.preventDefault();
+            $("#form-chat-submit").trigger("click");
+          }
+        });
+
+        // Funcion para descargar chat (solo si tiene permisos)
+
+        $(document).on("click", ".botonDescargarChat", function (e) {
+          $("#comisionDescargar").val($(this).data("comision"));
+          $("#formDescargarChat").submit();
+        });
+      });
+
+      // Funcion ajax que trae los datos de los ultimos mensajes y las comisiones
+      function loadData() {
+        $.ajax({
+          type: "POST",
+          url: "https://miel.unlam.edu.ar/chat/event/cargar-mensajes/",
+          data: { ultimaLecturaDB: ultimaLectura },
+          cache: "false",
+          success: loadDataResponse,
+          dataType: "JSON",
+        });
+      }
+
+      // Actualizacion de los datos y la interfaz cada X segundos
+      setInterval(loadData, intervaloActualizacion);
+
+      // Parseo del objeto JSON devuelto por ajax y genero el array con el contenido
+      function loadDataResponse(data) {
+        ultimaLectura = obtenerFechaHora();
+
+        if (data != null) {
+          $("#div-chat-form").css("display", "block");
+
+          $.each(data, function (i, element) {
+            if (contenidoChat[element.codComision] != null) {
+              if (element.mensajes != null && element.mensajes.length > 0) {
+                for (var j in element.mensajes) {
+                  if (!contenidoChat[element.codComision].mensajes) {
+                    contenidoChat[element.codComision].mensajes = [];
+                  }
+
+                  var ultimoMensaje =
+                    contenidoChat[element.codComision].mensajes[
+                      contenidoChat[element.codComision].mensajes.length - 1
+                    ];
+
+                  var idUltimoMensaje;
+                  if (
+                    ultimoMensaje != null &&
+                    ultimoMensaje.idChat_mensaje != null
+                  )
+                    idUltimoMensaje = ultimoMensaje.idChat_mensaje;
+                  else idUltimoMensaje = 0;
+
+                  if (idUltimoMensaje < element.mensajes[j].idChat_mensaje)
+                    contenidoChat[element.codComision].mensajes.push(
+                      element.mensajes[j]
+                    );
+                }
+                contenidoChat[element.codComision].cant +=
+                  element.mensajes.length;
+              }
+
+              contenidoChat[element.codComision].usuariosConectados =
+                element.usuariosConectados;
+            } else {
+              contenidoChat[element.codComision] = element;
+              if (element.mensajes != null && element.mensajes.length >= 0) {
+                contenidoChat[element.codComision].cant = 0;
+              }
+            }
+          });
+
+          if (comisionSeleccionada != 0) {
+            contenidoChat[comisionSeleccionada].cant = 0;
+          }
+        }
+
+        //console.log(contenidoChat);
+
+        if (primerCarga) {
+          generarInterfaz();
+        } else {
+          actualizarInterfaz();
+        }
+      }
+
+      // Funcion que crea la interfaz la primera vez que se ingresa
+      function generarInterfaz() {
+        primerCarga = 0;
+        var divComGenerado = "";
+
+        // genero interfaz de las comisiones
+        for (var codComision in contenidoChat) {
+          var comision = contenidoChat[codComision];
+
+          var botonDescargar = "";
+          if (contenidoChat[codComision]["permiso"] > 1) {
+            botonDescargar =
+              '<div><a href="javascript:void(0)" class="link w3-hide botonDescargarChat" ' +
+              'data-comision="' +
+              comision.codComision +
+              '">[Descargar]</a></div>';
+          }
+
+          divComGenerado +=
+            "<div class='div-chat-conversaciones-elemento w3-hover-light-grey' id='" +
+            comision.codComision +
+            "' >" +
+            "   <strong>" +
+            comision.nombreCurso +
+            "</strong><span id='cantidadMensajesNuevosCom" +
+            comision.codComision +
+            "'>&nbsp;</span>" +
+            "   <div>Comision " +
+            comision.nroComision +
+            " </div>" +
+            "   <div id='usuariosConectadosCom" +
+            comision.codComision +
+            "'>" +
+            comision.usuariosConectados +
+            " usuarios conectados</div>" +
+            botonDescargar +
+            "</div>";
+        }
+
+        $("#div-chat-conversaciones").html(divComGenerado);
+
+        // por defecto selecciono la primer comision para iniciar
+        comisionSeleccionada = 20095102;
+        $("#" + comisionSeleccionada)
+          .addClass("w3-leftbar w3-border-theme")
+          .find(".botonDescargarChat")
+          .removeClass("w3-hide");
+
+        // cargo los mensajes para la comision seleccionada
+        cargarMensajesDeComisionSeleccionada();
+      }
+
+      // Funcion que actualiza la interfaz generada una vez cargado el chat
+      function actualizarInterfaz() {
+        // actualizo cantidad de mensajes nuevos por comision
+        for (var codComision in contenidoChat) {
+          var comision = contenidoChat[codComision];
+
+          if (comision.cant > 0) {
+            $("#cantidadMensajesNuevosCom" + codComision).html(
+              "&nbsp; <span class='w3-badge w3-red'>" +
+                comision.cant +
+                "</span>"
+            );
+          } else {
+            $("#cantidadMensajesNuevosCom" + codComision).html("");
+          }
+          $("#usuariosConectadosCom" + codComision).text(
+            comision.usuariosConectados + " usuarios conectados"
+          );
+        }
+
+        // cargo mensajes de la comision seleccionada
+        cargarMensajesDeComisionSeleccionada();
+      }
+
+      function cargarMensajesDeComisionSeleccionada() {
+        var divMsgGenerado = "";
+
+        if ("mensajes" in contenidoChat[comisionSeleccionada]) {
+          for (var codMensaje in contenidoChat[comisionSeleccionada][
+            "mensajes"
+          ]) {
+            var mensaje =
+              contenidoChat[comisionSeleccionada]["mensajes"][codMensaje];
+
+            var clase =
+              mensaje.msgPropio == 1 ? "chat-bubble-right" : "chat-bubble-left";
+
+            divMsgGenerado +=
+              "<div class='chat-bubble " +
+              clase +
+              "'>" +
+              "  <span class='chat-usuario'><strong>" +
+              mensaje.nombre +
+              "</strong> &middot; " +
+              mensaje.mensaje +
+              "</span><br>" +
+              "  <div class='w3-small w3-right-align' style='margin-top: 4px'>" +
+              mensaje.fecha +
+              "</div>" +
+              "</div>";
+          }
+        } else {
+          divMsgGenerado =
+            "<div class='chat-bubble w3-pale-yellow'>No se enviaron mensajes &uacute;ltimamente.</div>";
+        }
+
+        var altoAnterior = $("#div-chat-mensajes")[0].scrollHeight;
+
+        $("#div-chat-mensajes").html(divMsgGenerado);
+
+        var altoPosterior = $("#div-chat-mensajes")[0].scrollHeight;
+
+        // Hago el scroll si hay mensajes nuevos
+        if (altoPosterior > altoAnterior) {
+          $("#div-chat-mensajes").scrollTo("div:last", 100);
+        }
+      }
+
+      function obtenerFechaHora() {
+        var dat = new Date();
+        return (
+          dat.getFullYear() +
+          "-" +
+          (dat.getMonth() + 1) +
+          "-" +
+          dat.getDate() +
+          " " +
+          dat.getHours() +
+          ":" +
+          dat.getMinutes() +
+          ":" +
+          dat.getSeconds()
+        );
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- ================================= ENCABEZADO ================================= -->
+
+    <script type="text/javascript">
+      $(function () {
+        // Click en cualquier parte de la ventana, oculta los desplegables
+        $(window).click(function () {
+          $("#dropdownCurso, #dropdownHerramienta").removeClass("w3-show");
+        });
+
+        // Click en el desplegable de cursos, oculta el desplegable de herramientas
+        $("#dropdownCurso, #botonDropdownCurso").click(function (event) {
+          $("#dropdownHerramienta").removeClass("w3-show");
+          event.stopPropagation();
+        });
+
+        // Click en el desplegable de herramientas, oculta el desplegable de cursos
+        $("#dropdownHerramienta, #botonDropdownHerramienta").click(function (
+          event
+        ) {
+          $("#dropdownCurso").removeClass("w3-show");
+          event.stopPropagation();
+        });
+
+        // Click en el boton de cursos, abre desplegable de cursos
+        $("#botonDropdownCurso").click(function () {
+          $("#dropdownCurso").toggleClass("w3-show");
+        });
+
+        // Click en el boton de herramientas, abre desplegable de herramientas
+        $("#botonDropdownHerramienta").click(function () {
+          $("#dropdownHerramienta").toggleClass("w3-show");
+        });
+
+        // Boton para cambiar al tema claro u oscuro
+        $(".botonCambiarTema").click(function () {
+          $.post(
+            "https://miel.unlam.edu.ar/principal/event/cambiarTemaAjax/",
+            function (data) {
+              $("#mielTheme").attr("href", data.darkCssPath);
+              $("#fileIconsTheme").attr("href", data.darkFileIconsPath);
+              $("#logoUnlamHeader").attr("src", data.logoUnlamPath);
+              $("#logoMielHeader").attr("src", data.logoMielPath);
+              $(".botonCambiarTema").attr(
+                "title",
+                data.tema === "dark" ? "Modo claro" : "Modo oscuro"
+              );
+            },
+            "json"
+          );
+        });
+
+        // Cierro todos los desplegables al presionar la tecla ESC
+        $(document).keyup(function (e) {
+          if (e.keyCode === 27)
+            $(".w3-dropdown-content").removeClass("w3-show");
+        });
+      });
+
+      // Cierro todos los desplegables si hago click en el iframe de tinymce
+      function tinymce_click() {
+        $(".w3-dropdown-content").removeClass("w3-show");
+      }
+    </script>
+
+    <header id="encabezado" class="w3-top">
+      <!-- ================================ LOGOS Y PERFIL ================================ -->
+
+      <div
+        class="w3-row w3-white w3-padding-left w3-padding-right w3-padding-4"
+      >
+        <div class="w3-half logos">
+          <img
+            src="https://miel.unlam.edu.ar/vista/imagenes/logo_unlam_34_dark.png"
+            id="logoUnlamHeader"
+            class="w3-margin-right"
+            alt="logo unlam"
+          />
+          <img
+            src="https://miel.unlam.edu.ar/vista/imagenes/logo_miel_34_dark.png"
+            id="logoMielHeader"
+            alt="logo miel"
+          />
+        </div>
+        <div class="w3-half w3-hide-small">
+          <a
+            href="https://miel.unlam.edu.ar/perfil/datos/"
+            class="w3-circle w3-right fotoPerfil"
+            aria-label="Foto de perfil"
+            style="
+              background-image: url('https://miel.unlam.edu.ar/data2/avatares/94cbab891e2af86775c96a5ac760f23d.jpg?1670021489');
+            "
+          ></a>
+
+          <div class="w3-right w3-right-align w3-margin-right nombreUsuario">
+            DE STEFANO, JAZMIN ISABEL<br />
+
+            <a
+              href="https://miel.unlam.edu.ar/perfil/datos/"
+              class="w3-small link"
+              ><strong>Mi perfil</strong></a
+            >
+            &middot;
+
+            <a
+              href="https://miel.unlam.edu.ar/ayuda/tutoriales/"
+              class="w3-small link"
+              id="btnAyuda"
+              ><strong>Ayuda</strong></a
+            >
+            &middot;
+
+            <a
+              href="https://miel.unlam.edu.ar/principal/event/logout/"
+              class="w3-small link"
+              ><strong>Cerrar sesi&oacute;n</strong></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ================================ MENU PRINCIPAL ================================ -->
+
+      <ul id="menu-principal" class="w3-navbar w3-card-2 w3-theme">
+        <!-- ============================== BOTONERA IZQUIERDA ============================= -->
+
+        <li class="w3-opennav w3-left w3-hide-large">
+          <a
+            class="w3-hover-theme-d1 w3-padding-6 nav-icon btnToggleMenuLateral"
+            href="javascript:void(0);"
+            title="Men&uacute; de navegaci&oacute;n"
+          >
+            <i class="material-icons" aria-hidden="true">menu</i>
+          </a>
+        </li>
+        <li class="w3-opennav w3-left">
+          <a
+            class="w3-hover-theme-d1 w3-padding-6 nav-icon"
+            href="https://miel.unlam.edu.ar/principal/interno/"
+            title="Men&uacute; principal"
+          >
+            <i class="material-icons" aria-hidden="true">home</i>
+          </a>
+        </li>
+
+        <!-- ============================ DESPLEGABLE DE CURSOS ============================ -->
+
+        <li class="w3-hide-medium w3-hide-small">
+          <a
+            id="botonDropdownCurso"
+            class="w3-hover-theme-d1 w3-padding-6"
+            href="javascript:void(0);"
+            aria-haspopup="true"
+            role="button"
+            aria-label="Programación Web II (01-1929). Seleccionar curso"
+          >
+            Programación Web II (01-1929)
+            <i class="material-icons" aria-hidden="true">arrow_drop_down</i>
+          </a>
+          <div
+            id="dropdownCurso"
+            class="w3-dropdown-content w3-card-4"
+            aria-labelledby="botonDropdownCurso"
+          >
+            <a href="https://miel.unlam.edu.ar/chat/chat/comision/20095102"
+              >Programación Web II (01-1929)</a
+            ><a href="https://miel.unlam.edu.ar/principal/interno/"
+              >Diseño de Aplicaciones Web (01-3966)</a
+            ><a href="https://miel.unlam.edu.ar/chat/chat/comision/20095116"
+              >Tecnologia de Redes (01-5900)</a
+            >
+          </div>
+        </li>
+
+        <!-- ========================= DESPLEGABLE DE HERRAMIENTAS ========================= -->
+
+        <li class="w3-hide-medium w3-hide-small">
+          <a
+            id="botonDropdownHerramienta"
+            class="w3-hover-theme-d1 w3-padding-6"
+            href="javascript:void(0)"
+            aria-haspopup="true"
+            role="button"
+            aria-label="Chat. Seleccionar herramienta"
+          >
+            Chat
+            <i class="material-icons" aria-hidden="true">arrow_drop_down</i>
+          </a>
+          <div
+            id="dropdownHerramienta"
+            class="w3-dropdown-content w3-card-4"
+            aria-labelledby="botonDropdownHerramienta"
+          >
+            <a
+              href="https://miel.unlam.edu.ar/contenido/archivos/comision/20095102"
+              >Contenidos</a
+            ><a
+              href="https://miel.unlam.edu.ar/portafolio/practicas/comision/20095102"
+              >Portafolio</a
+            ><a
+              href="https://miel.unlam.edu.ar/mensajeria/entrada/comision/20095102"
+              >Mensajer&iacute;a</a
+            ><a href="https://miel.unlam.edu.ar/forov2/temas/comision/20095102"
+              >Foros</a
+            ><a href="https://miel.unlam.edu.ar/chat/chat/comision/20095102"
+              >Chat</a
+            ><a
+              href="https://miel.unlam.edu.ar/evaluacion/evaluaciones/comision/20095102"
+              >Evaluaci&oacute;n</a
+            >
+          </div>
+        </li>
+
+        <!-- =============================== BOTONERA DERECHA ============================== -->
+
+        <li class="w3-opennav w3-right w3-hide-medium w3-hide-large">
+          <a
+            class="w3-hover-theme-d1 w3-padding-6 nav-icon"
+            href="https://miel.unlam.edu.ar/principal/event/logout/"
+            title="Cerrar sesi&oacute;n"
+          >
+            <i class="material-icons" aria-hidden="true">exit_to_app</i>
+          </a>
+        </li>
+        <li class="w3-opennav w3-right w3-hide-medium w3-hide-large">
+          <a
+            class="w3-hover-theme-d1 w3-padding-6 nav-icon"
+            href="https://miel.unlam.edu.ar/ayuda/tutoriales/"
+            title="Ayuda"
+          >
+            <i class="material-icons" aria-hidden="true">help_outline</i>
+          </a>
+        </li>
+        <li class="w3-opennav w3-right w3-hide-medium w3-hide-large">
+          <a
+            class="w3-hover-theme-d1 w3-padding-6 nav-icon"
+            href="https://miel.unlam.edu.ar/perfil/datos/"
+            title="Mi perfil"
+          >
+            <i class="material-icons" aria-hidden="true">person</i>
+          </a>
+        </li>
+        <li class="w3-opennav w3-right">
+          <a
+            class="w3-hover-theme-d1 w3-padding-6 nav-icon botonCambiarTema"
+            href="javascript:void(0);"
+            title="Modo claro"
+          >
+            <i class="material-icons" aria-hidden="true">brightness_4</i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- =========================== BARRA DE NAVEGACION LATERAL =========================== -->
+
+    <script type="text/javascript">
+      $(function () {
+        // Boton para cerrar el menu lateral cuando es pantalla chica
+        $(".btnCerrarMenuLateral").click(function () {
+          $("#menu-lateral").hide();
+          $("#menu-lateral-overlay").hide();
+        });
+
+        // Boton para abrir el menu lateral cuando es pantalla chica
+        $(".btnAbrirMenuLateral").click(function () {
+          $("#menu-lateral").show();
+          $("#menu-lateral-overlay").show();
+        });
+
+        // Boton para abrir/cerrar el menu lateral en pantalla chica
+        $(".btnToggleMenuLateral").click(function () {
+          $("#menu-lateral").toggle();
+          $("#menu-lateral-overlay").toggle();
+        });
+      });
+    </script>
+
+    <nav id="menu-lateral" class="w3-sidenav w3-card-2 w3-collapse w3-white">
+      <div id="menu-lateral-inner">
+        <div id="menu-lateral-inner-inner" class="w3-text-white">
+          <a
+            href="javascript:void(0)"
+            class="w3-right w3-xlarge w3-padding-large w3-hide-large btnCerrarMenuLateral"
+            title="Cerrar men&uacute; de navegaci&oacute;n"
+          >
+            <i class="material-icons" aria-hidden="true">close</i>
+          </a>
+          <div>
+            <div class="w3-container w3-padding-top">
+              <h1>Chat</h1>
+            </div>
+            <a
+              href="https://miel.unlam.edu.ar/chat/chat/comision/20095102"
+              class="menu-opcion selected"
+              ><i
+                class="material-icons w3-left w3-large w3-padding-right"
+                aria-hidden="true"
+                >chat</i
+              >Conversaciones</a
+            >
+
+            <a href="#" class="menu-opcion"
+              ><i
+                class="material-icons w3-left w3-large w3-padding-right"
+                aria-hidden="true"
+                >mode_edit</i
+              >Nuevo mensaje</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Capa con transparencia cuando se abre el menu lateral en pantallas chicas -->
+    <div
+      id="menu-lateral-overlay"
+      class="w3-overlay w3-hide-large btnCerrarMenuLateral"
+    ></div>
+
+    <!-- =============================== CONTENIDO PRINCIPAL =============================== -->
+
+    <main class="w3-main w3-container">
+      <div class="w3-clear">
+        <h1 class="w3-left">Conversaciones por comisi&oacute;n</h1>
+      </div>
+
+      <div class="w3-row">
+        <div
+          class="w3-col w3-mobile mobile-padding-0"
+          id="div-chat-conversaciones"
+        ></div>
+
+        <div
+          class="w3-rest w3-mobile w3-padding-left mobile-padding-0"
+          id="div-chat"
+          style="display: flex; flex-direction: row; gap: 10px;"
+        > 
+    
+                <div id="div-chat-mensajes" style="width: 30%;">
+                    <div style="border-left: 2px solid green; height: 80px; width: 100%; display: flex; flex-direction: column; padding: 10px; gap: 10px; cursor: pointer;" id="chat-preview">
+                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                            <h6 style="padding: 0; margin: 0;">Silvio Silvio</h6>
+                        </div>
+                        <div style="width: 100%; height: fit-content; background-color: rgba(170, 166, 166, 0.336); color: black; padding: 2px 4px; border-radius: 5px;">
+                            <p style="padding: 0; margin: 0; color: #9e9999;">Hola, como estas?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div-chat-conversaciones" style="display: flex; width: 100%; flex-direction: column; justify-content: space-between; border-left: 2px solid #222222; padding-left: 50px;">
+                    <div style="width: 100%; display: flex; flex-direction: column; gap: 10px;">
+                     
+                            <div style="display: flex; flex-direction: row; gap: 5px;">
+                                <h6 style=" margin: 0; font-size: 14px;">Silvio Silvio</h6>
+                            </div>
+                            <div style="padding: 10px !important; width: 40%; height: fit-content; background-color: rgba(218, 214, 214, 0.336); color: black; padding: 2px 4px; border-radius: 5px;">
+                                <p style="margin: 0; font-size: 14px;  color: #9e9999;">Hola, como estas?</p>
+                            </div>
+
+                            <div style="display: flex; flex-direction: row; gap: 5px;">
+                                <h6 style="margin: 0; font-size: 14px;">Silvio Silvio</h6>
+                            </div>
+                            <div style="padding: 10px !important; width: 40%; height: fit-content; background-color: rgba(218, 214, 214, 0.336); color: black; padding: 2px 4px; border-radius: 5px;">
+                                <p style="margin: 0; font-size: 14px;  color: #9e9999;">Queria consultarte que vieron la clase pasada</p>
+                            </div>
+
+                            <div style="display: flex; flex-direction: row; gap: 5px; align-self: end;">
+                                <h6 style="margin: 0; font-size: 14px;">Jazmin De Stefano</h6>
+                            </div>
+                            <div style=" align-self: end;padding: 10px !important; width: 40%; height: fit-content; background-color: #59a15a; color: black; padding: 2px 4px; border-radius: 5px;">
+                                <p style="margin: 0; font-size: 14px;  color: black;">Hola!</p>
+                            </div>
+
+                            <div style=" align-self: end;display: flex; flex-direction: row; gap: 5px;">
+                                <h6 style=" margin: 0;font-size: 14px;">Jazmin De Stefano</h6>
+                            </div>
+                            <div style=" align-self: end;padding: 10px !important; width: 40%; height: fit-content; background-color: #59a15a; color: black; padding: 2px 4px; border-radius: 5px;">
+                                <p style=" margin: 0; font-size: 14px; color: black;">La clase pasada vimos una introduccion a PHP.</p>
+                            </div>
+                   
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <textarea
+                          style="height: fit-content; display: flex; align-self: flex-end;"
+                          name="chat-mensaje"
+                          id="form-chat-mensaje"
+                          class="w3-input w3-border fixed-x w3-round"
+                          placeholder="Escriba aqu&iacute; su mensaje..."
+                          maxlength="500"
+                        ></textarea>
+                        <button type="submit" style="height: fit-content; width: 5%; background-color: #222222; border-color: #222222; color: white; cursor: pointer; display: flex; align-self: flex-end;">Enviar</button>
+                    </div>
+                </div>
+        </div>
+
+        
+       
+   
+
+      <form
+        id="formDescargarChat"
+        method="post"
+        action="https://miel.unlam.edu.ar/chat/event/descargarChat/"
+      >
+        <input
+          type="hidden"
+          name="comisionDescargar"
+          id="comisionDescargar"
+          value=""
+        />
+      </form>
+
+      <!-- ================================== PIE DE PAGINA ================================== -->
+
+      <footer
+        class="w3-container w3-section w3-padding-16 w3-center w3-opacity"
+      >
+        <hr />
+        Departamento de Ingenier&iacute;a e Investigaciones Tecnol&oacute;gicas
+        - Materias Interactivas en L&iacute;nea - 2023
+      </footer>
+    </main>
+  </body>
+</html>
